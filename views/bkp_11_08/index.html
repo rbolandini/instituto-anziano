@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TWW8WZK');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Oferecemos melhores condições para os idosos em suas próprias casas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://emelyragazi.com.br/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Instituto Anziano - Longevidade Para Todos">
+    <meta property="og:description" content="Oferecemos melhores condições para os idosos em suas próprias casas">
+    <meta property="og:url" content="https://institutoanziano.com.br/">
+    <meta property="og:site_name" content="Instituto Anziano - Longevidade Para Todos">
+    <meta property="og:image" content="assets/img/banner-top.png">
+    <meta property="og:image:url" content="assets/img/banner-top.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="760" />
+    <meta property="og:image:height" content="582" />
+    <meta name="msapplication-TileColor" content="#E83241">
+    <meta name="msapplication-TileImage" content="assets/img/fav/apple-touch-icon-114x114.png">
+    <meta name="theme-color" content="#E83241">
+
+
+    <title>
+        Emely Ragazi - Descomplicando a vida prateada
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css" />
+</head>
+
+<body class="font-roboto text-grey font-normal leading-normal text-16 antialiased bg-white" id="top">
+
+	<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWW8WZK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="header"></div>
+    <section class="bg-blue-lighetest pb-10 py-20" id="home">
+        <div class="container">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full text-center">
+                    <h2 class="text-blue text-30 desktop:text-44 leading-none">
+                        Oferecemos melhores condições para
+                        <br class="hidden tablet:block" />
+                        os idosos em suas próprias casas.
+                    </h2>
+                </div>
+
+                <div class="w-full tablet:w-5/6 text-center py-10 mx-auto">
+                    <p class="pb-5">
+                        <strong>"Aging in Place"</strong>, ou traduzindo
+                        <strong>"Envelhecimento no lugar"</strong>, um
+                        conceito difundido na Europa e Estados Unidos, um
+                        sistema <br class="hidden tablet:block" />que
+                        consiste em proporcionar condições para que os
+                        idosos continuem vivendo em seus lares com o estilo
+                        de vida que escolheram, com a segurança de que
+                        necessitam, a independência que merecem e o conforto
+                        que eles gostam.
+                    </p>
+
+                    <p>
+                        Tem como foco garantir o conforto e a independência
+                        das pessoas da terceira idade.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="service"></div>
+
+        <div id="profile"></div>
+        <div id="about"></div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // Import files to folde Views.
+        $(document).ready(() => {
+            $("#header").load("views/header.html");
+            $("#service").load("views/services.html");
+            $("#profile").load("views/profile.html");
+            $("#about").load("views/about.html");
+            $("#footer").load("views/footer.html");
+
+
+            var $root = $('html, body');
+
+
+        });
+
+        const clickButton = () => {
+            $("#mobilenav").on("click", () => {
+                $(".hamburger").toggleClass("is-active");
+                $(".navmb").toggleClass("navmbactive");
+            });
+
+            $(".navmb ul li a").on("click", () => {
+                $(".hamburger").removeClass("is-active");
+                $(".navmb").removeClass("navmbactive");
+            });
+        };
+
+
+        const teste = () => {
+            var $root = $('html, body');
+
+            $('a[href^="#"]').click(function () {
+                var href = $.attr(this, 'href');
+
+                $root.animate({
+                    scrollTop: $(href).offset().top
+                }, 500, function () {
+                    window.location.hash = href;
+                });
+
+                return false;
+            });
+        }
+
+        setTimeout(clickButton, 300);
+        setTimeout(teste, 200);
+
+
+
+    </script>
+</body>
+
+</html>
